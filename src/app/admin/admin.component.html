@@ -1,0 +1,138 @@
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/admin" (click)="reload()">AutoMobile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="helloUser" (click)="logout()">Log Out</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['edit-form', 'add']">Add Item</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sort By
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="lowToHighPrice()">Price(Low to High)</a></li>
+              <li><a class="dropdown-item" (click)="highToLowPrice()">Price(High to Low)</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" (click)="lowToHighEngine()">Cubic Capacity(Low to High)</a></li>
+              <li><a class="dropdown-item" (click)="highToLowEngine()">Cubic Capacity(High to Low)</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="fa fa-shopping-cart fa-2x" style="cursor: pointer;" routerLink="/shoppingCart"></i>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            [formControl]="searchForm">
+        </form>
+      </div>
+    </div>
+  </nav><header>
+    <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-4">
+        <h2>Welcome Back, {{helloUser}}</h2>
+        <p>Choose your car by filtering them down below</p></div></div>
+        <div class="row">
+          <div class="col-2"></div>
+       <div class="col-1"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Fuel Type
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="diesel()">Diesel</a></li>
+          <li><a class="dropdown-item" (click)="petrol()">Petrol</a></li>
+          <li><a class="dropdown-item" (click)="electric()">Electric</a></li>
+        </ul></div>
+        <div class="col-1"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Transmission
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="manual()">Manual</a></li>
+          <li><a class="dropdown-item" (click)="automatic()">Automatic</a></li>
+          <li><a class="dropdown-item" (click)="robotic()">Robotic</a></li>
+        </ul></div>
+        <div class="col-1"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 40px;">
+          Brand
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="benz()">Mercedes-Benz</a></li>
+          <li><a class="dropdown-item" (click)="bmw()">BMW</a></li>
+          <li><a class="dropdown-item" (click)="audi()">Audi</a></li>
+          <li><a class="dropdown-item" (click)="volkswagen()">VolksWagen</a></li>
+        </ul></div></div>
+  <br>
+  <div class="row">
+    <div class="col-2"></div>
+  <div class="col-4">Year
+    <input type="number" [formControl]="startYear" style="width: 126px" placeholder="From">
+    <input type="number" [formControl]="endYear" style="width: 126px" placeholder="To">
+  <button class="btn btn-outline-primary" (click)="year()">&#10003;</button></div>
+</div><br>
+<div class="row">
+  <div class="col-2"></div>
+<div class="col-4">Engine
+  <input type="number" [formControl]="startEngine" style="width: 117px" placeholder="From">
+  <input type="number" [formControl]="endEngine" style="width: 117px" placeholder="To">
+<button class="btn btn-outline-primary" (click)="engine()">&#10003;</button></div>
+</div><br>
+<div class="row">
+  <div class="col-2"></div>
+<div class="col-4">Price 
+  <input type="number" [formControl]="startPrice" style="width: 124px" placeholder="From">
+  <input type="number" [formControl]="endPrice" style="width: 125px" placeholder="To">
+<button class="btn btn-outline-primary" (click)="price()">&#10003;</button></div>
+</div></div></header>
+  <div class="container" style="margin-top:50px;">
+    <div class="row" *ngIf="filteredCars | async as itemList; else loading">
+      <div class="col-md-3" *ngFor="let item of itemList">
+        <div class="card-sl">
+          <div class="card-image">
+            <img src={{item.photos[0]}} />
+          </div>
+    
+          <div class="card-heading">
+            {{item?.brand}} {{item.model}}
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-1"></div><button class="btn btn-outline-primary col-5" [routerLink]="['edit-form', item.id]">Edit</button>
+              <button class="btn btn-outline-danger col-5" (click)="onDelete(item); reload()">Delete</button>
+            </div>
+          </div><br>
+  
+          <div class="container">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-9"><button class="btn btn-primary" [routerLink]="['/show-more', item.id]">Show
+                  More</button></div>
+            </div>
+          </div>
+          <div class="card-text">
+            {{item.price | currency:'EUR'}}
+          </div>
+          <a class="card-button" (click)="addToShopList(item)" style="cursor: pointer;">Add to Shopping Cart</a>
+        </div><br><br>
+      </div>
+    </div>
+  </div>
+  <ng-template #loading>
+    <br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-5"></div>
+        <div class="loader"></div>
+      </div>
+    </div>
+  </ng-template>
+  <router-outlet></router-outlet>

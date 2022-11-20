@@ -1,0 +1,370 @@
+{
+  "users": [
+    {
+      "fname": "Donald",
+      "lname": "Duro",
+      "email": "donaldduro@gmail.com",
+      "id": 1,
+      "shopList": [
+        {
+          "photos": [
+            "https://www.cnet.com/a/img/resize/e9322c32bef0191d93d540c1629b24c428d8ec7f/hub/2020/10/07/d3bbe636-f778-4c75-9529-7e9b5ac6abf6/ogi1-2020-land-rover-defender-110-006.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "https://di-uploads-pod6.dealerinspire.com/landroverwestchester/uploads/2020/04/Front-interior-in-a-2020-Land-Rover-Defender.png",
+            "https://carnetwork.s3.ap-southeast-1.amazonaws.com/file/af6bdc3b729f43cfb9f2828c762f2e2e.jpg",
+            "https://cdni.autocarindia.com/ExtraImages/20201016122923_2020-Land-Rover-Defender-front-showroom.jpg"
+          ],
+          "brand": "Land Rover",
+          "model": "Defender",
+          "engine": 3000,
+          "fuel": "Diesel",
+          "transmission": "Automatic",
+          "year": 2020,
+          "price": 55000,
+          "id": 5
+        },
+        {
+          "photos": [
+            "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Tesla_Supercharger_Model_3_bug_4.jpg",
+            "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/VK7MKQNXS5ITVM7VFEMGBA4CCI.jpg",
+            "https://epulse.ro/prod/7/b_7_ZkbrT_alap-webre_06_1000x775.jpg",
+            "https://images.squarespace-cdn.com/content/v1/5b2437bcc3c16a6fea91cd4d/1585872257585-0LA01DG1CI1Q26IZ2V82/2020-04-02+15.21.57.jpg?format=1000w",
+            "https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model3-lt-airporthero-low-101-1587061146.jpg?crop=1.00xw:0.752xh;0,0.190xh&resize=1200:*"
+          ],
+          "brand": "Tesla",
+          "model": "Model 3",
+          "engine": 0,
+          "fuel": "Electric",
+          "transmission": "Automatic",
+          "year": 2018,
+          "price": 65000,
+          "id": 8
+        }
+      ]
+    },
+    {
+      "fname": "Donaldo",
+      "lname": "Duro",
+      "email": "donaldoduro@gmail.com",
+      "id": 2,
+      "shopList": [
+        {
+          "photos": [
+            "https://i.autobox.al/files/04-2021/ad13420/toyota-yaris-1599251288_large.jpeg",
+            "https://i.autobox.al/files/12-2020/ad12258/toyota-yaris-2018696881_large.jpeg",
+            "data:image/jpeg;base64,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",
+            "https://motors.al/cdn/thmbs/9c/10/9c10b43397728fb0f5a884e7e2828ce3.jpg"
+          ],
+          "brand": "Toyota",
+          "model": "Yaris",
+          "engine": 1400,
+          "fuel": "Diesel",
+          "transmission": "Robotic",
+          "year": 2007,
+          "price": 3800,
+          "id": 12
+        },
+        {
+          "photos": [
+            "https://i.gaw.to/vehicles/photos/40/25/402523-2021-porsche-911.jpg?640x400",
+            "https://newswirengr.com/wp-content/uploads/2022/08/2022-porsche-911-carrera-driver-area-carbuzz-897773-1600.jpg",
+            "https://img.etimg.com/thumb/msid-68497617,width-650,imgsize-423455,,resizemode-4,quality-100/porsche992.jpg",
+            "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/911ModelImage.jpg&w=730&h=484&q=75&c=1"
+          ],
+          "brand": "Porsche",
+          "model": "911",
+          "engine": 3800,
+          "fuel": "Petrol",
+          "transmission": "Automatic",
+          "year": 2021,
+          "price": 210000,
+          "id": 4
+        },
+        {
+          "photos": [
+            "https://www.cnet.com/a/img/resize/e9322c32bef0191d93d540c1629b24c428d8ec7f/hub/2020/10/07/d3bbe636-f778-4c75-9529-7e9b5ac6abf6/ogi1-2020-land-rover-defender-110-006.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "https://di-uploads-pod6.dealerinspire.com/landroverwestchester/uploads/2020/04/Front-interior-in-a-2020-Land-Rover-Defender.png",
+            "https://carnetwork.s3.ap-southeast-1.amazonaws.com/file/af6bdc3b729f43cfb9f2828c762f2e2e.jpg",
+            "https://cdni.autocarindia.com/ExtraImages/20201016122923_2020-Land-Rover-Defender-front-showroom.jpg"
+          ],
+          "brand": "Land Rover",
+          "model": "Defender",
+          "engine": 3000,
+          "fuel": "Diesel",
+          "transmission": "Automatic",
+          "year": 2020,
+          "price": 55000,
+          "id": 5
+        }
+      ]
+    },
+    {
+      "fname": "Person3",
+      "lname": "Person",
+      "email": "person3@gmail.com",
+      "id": 3,
+      "shopList": []
+    },
+    {
+      "fname": "Admin",
+      "lname": "Admin",
+      "email": "admin@admin.com",
+      "id": 4,
+      "shopList": [
+        {
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Bugatti_Chiron_%2836559710091%29.jpg/1200px-Bugatti_Chiron_%2836559710091%29.jpg",
+            "https://blog.dupontregistry.com/wp-content/uploads/2019/04/18_chiron_driver-side_print.jpg",
+            "https://www.bugatti.com/fileadmin/_processed_/sei/p54/se-image-af40513855bc5a38f9a88fd61b239903.jpg",
+            "https://www.goodwood.com/globalassets/.road--racing/road/news/2020/3-march/bugatti-chiron-pur-sport/bugatti-chiron-pur-sport-front-left.jpg?crop=(0,0,2600,1463)&width=1600",
+            "https://www.cnet.com/a/img/resize/6430e9691357eb4f566af46b5dab09e8fe2ed64a/hub/2017/03/22/3731fc90-c061-4f04-b6a4-d04622c1e98f/bugatti-chiron-3000px-54.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "https://cdn.pocket-lint.com/r/s/1201x/assets/images/136949-cars-review-hands-on-bugatti-chiron-image1-XC7zd4lnWP.jpg"
+          ],
+          "brand": "Bugatti ",
+          "model": "Chiron",
+          "engine": 8000,
+          "fuel": "Petrol",
+          "transmission": "Automatic",
+          "year": 2019,
+          "price": 4000000,
+          "id": 9
+        },
+        {
+          "photos": [
+            "https://i.gaw.to/vehicles/photos/40/25/402523-2021-porsche-911.jpg?640x400",
+            "https://newswirengr.com/wp-content/uploads/2022/08/2022-porsche-911-carrera-driver-area-carbuzz-897773-1600.jpg",
+            "https://img.etimg.com/thumb/msid-68497617,width-650,imgsize-423455,,resizemode-4,quality-100/porsche992.jpg",
+            "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/911ModelImage.jpg&w=730&h=484&q=75&c=1"
+          ],
+          "brand": "Porsche",
+          "model": "911",
+          "engine": 3800,
+          "fuel": "Petrol",
+          "transmission": "Automatic",
+          "year": 2021,
+          "price": 210000,
+          "id": 4
+        },
+        {
+          "photos": [
+            "https://d1gymyavdvyjgt.cloudfront.net/drive/images/made/drive/images/remote/https_ssl.caranddriving.com/f2/images/used/large/Smart_794_529_70.jpg",
+            "https://motors.al/cdn/thmbs/9a/66/9a660c90cf08a61f5afa5cba2ec1cd0b.jpg",
+            "https://carnotautomart.com/uploads/car/36687_photo_3619_875.jpg",
+            "https://parkers-images.bauersecure.com/gallery-image/wp-images/2206/main-interior/1752x1168/dsc03461.jpg"
+          ],
+          "brand": "Smart ",
+          "model": "For Two",
+          "engine": 1100,
+          "fuel": "Petrol",
+          "transmission": "Robotic",
+          "year": 2004,
+          "price": 1300,
+          "id": 13
+        },
+        {
+          "photos": [
+            "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Tesla_Supercharger_Model_3_bug_4.jpg",
+            "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/VK7MKQNXS5ITVM7VFEMGBA4CCI.jpg",
+            "https://epulse.ro/prod/7/b_7_ZkbrT_alap-webre_06_1000x775.jpg",
+            "https://images.squarespace-cdn.com/content/v1/5b2437bcc3c16a6fea91cd4d/1585872257585-0LA01DG1CI1Q26IZ2V82/2020-04-02+15.21.57.jpg?format=1000w",
+            "https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model3-lt-airporthero-low-101-1587061146.jpg?crop=1.00xw:0.752xh;0,0.190xh&resize=1200:*"
+          ],
+          "brand": "Tesla",
+          "model": "Model 3",
+          "engine": 0,
+          "fuel": "Electric",
+          "transmission": "Automatic",
+          "year": 2018,
+          "price": 65000,
+          "id": 8
+        }
+      ]
+    },
+    {
+      "fname": "Test",
+      "lname": "Test",
+      "email": "test@test.com",
+      "shopList": [],
+      "id": 5
+    },
+    {
+      "fname": "Person1",
+      "lname": "Person1",
+      "email": "person1@gmail.com",
+      "id": 6,
+      "shopList": [
+        {
+          "photos": [
+            "https://i.gaw.to/vehicles/photos/40/25/402523-2021-porsche-911.jpg?640x400",
+            "https://newswirengr.com/wp-content/uploads/2022/08/2022-porsche-911-carrera-driver-area-carbuzz-897773-1600.jpg",
+            "https://img.etimg.com/thumb/msid-68497617,width-650,imgsize-423455,,resizemode-4,quality-100/porsche992.jpg",
+            "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/911ModelImage.jpg&w=730&h=484&q=75&c=1"
+          ],
+          "brand": "Porsche",
+          "model": "911",
+          "engine": 3800,
+          "fuel": "Petrol",
+          "transmission": "Automatic",
+          "year": 2021,
+          "price": 210000,
+          "id": 4
+        }
+      ]
+    },
+    {
+      "fname": "Person2",
+      "lname": "Person",
+      "email": "person2@person.com",
+      "shopList": [],
+      "id": 7
+    }
+  ],
+  "items": [
+    {
+      "photos": [
+        "https://i.gaw.to/vehicles/photos/40/25/402523-2021-porsche-911.jpg?640x400",
+        "https://newswirengr.com/wp-content/uploads/2022/08/2022-porsche-911-carrera-driver-area-carbuzz-897773-1600.jpg",
+        "https://img.etimg.com/thumb/msid-68497617,width-650,imgsize-423455,,resizemode-4,quality-100/porsche992.jpg",
+        "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/911ModelImage.jpg&w=730&h=484&q=75&c=1"
+      ],
+      "brand": "Porsche",
+      "model": "911",
+      "engine": 3800,
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "year": 2021,
+      "price": 210000,
+      "id": 4
+    },
+    {
+      "photos": [
+        "https://www.cnet.com/a/img/resize/e9322c32bef0191d93d540c1629b24c428d8ec7f/hub/2020/10/07/d3bbe636-f778-4c75-9529-7e9b5ac6abf6/ogi1-2020-land-rover-defender-110-006.jpg?auto=webp&fit=crop&height=675&width=1200",
+        "https://di-uploads-pod6.dealerinspire.com/landroverwestchester/uploads/2020/04/Front-interior-in-a-2020-Land-Rover-Defender.png",
+        "https://carnetwork.s3.ap-southeast-1.amazonaws.com/file/af6bdc3b729f43cfb9f2828c762f2e2e.jpg",
+        "https://cdni.autocarindia.com/ExtraImages/20201016122923_2020-Land-Rover-Defender-front-showroom.jpg"
+      ],
+      "brand": "Land Rover",
+      "model": "Defender",
+      "engine": 3000,
+      "fuel": "Diesel",
+      "transmission": "Automatic",
+      "year": 2020,
+      "price": 55000,
+      "id": 5
+    },
+    {
+      "photos": [
+        "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Tesla_Supercharger_Model_3_bug_4.jpg",
+        "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/VK7MKQNXS5ITVM7VFEMGBA4CCI.jpg",
+        "https://epulse.ro/prod/7/b_7_ZkbrT_alap-webre_06_1000x775.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5b2437bcc3c16a6fea91cd4d/1585872257585-0LA01DG1CI1Q26IZ2V82/2020-04-02+15.21.57.jpg?format=1000w",
+        "https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model3-lt-airporthero-low-101-1587061146.jpg?crop=1.00xw:0.752xh;0,0.190xh&resize=1200:*"
+      ],
+      "brand": "Tesla",
+      "model": "Model 3",
+      "engine": 0,
+      "fuel": "Electric",
+      "transmission": "Automatic",
+      "year": 2018,
+      "price": 65000,
+      "id": 8
+    },
+    {
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Bugatti_Chiron_%2836559710091%29.jpg/1200px-Bugatti_Chiron_%2836559710091%29.jpg",
+        "https://blog.dupontregistry.com/wp-content/uploads/2019/04/18_chiron_driver-side_print.jpg",
+        "https://www.bugatti.com/fileadmin/_processed_/sei/p54/se-image-af40513855bc5a38f9a88fd61b239903.jpg",
+        "https://www.goodwood.com/globalassets/.road--racing/road/news/2020/3-march/bugatti-chiron-pur-sport/bugatti-chiron-pur-sport-front-left.jpg?crop=(0,0,2600,1463)&width=1600",
+        "https://www.cnet.com/a/img/resize/6430e9691357eb4f566af46b5dab09e8fe2ed64a/hub/2017/03/22/3731fc90-c061-4f04-b6a4-d04622c1e98f/bugatti-chiron-3000px-54.jpg?auto=webp&fit=crop&height=675&width=1200",
+        "https://cdn.pocket-lint.com/r/s/1201x/assets/images/136949-cars-review-hands-on-bugatti-chiron-image1-XC7zd4lnWP.jpg"
+      ],
+      "brand": "Bugatti ",
+      "model": "Chiron",
+      "engine": 8000,
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "year": 2019,
+      "price": 4000000,
+      "id": 9
+    },
+    {
+      "photos": [
+        "https://cdn.car-recalls.eu/wp-content/uploads/2020/04/Mercedes-Benz-E-Class-2017-recall-window-seal.jpg",
+        "https://s1.cdn.autoevolution.com/images/news/2018-mercedes-benz-e-class-interior-officially-unveiled-will-rival-the-s-class-102722_1.jpg",
+        "https://images.news18.com/ibnlive/uploads/2017/02/E-Class1.jpg",
+        "https://assets.whichcar.com.au/image/upload/s--KWlLcBUR--/ar_1.9047619047619047,c_fill,f_auto,q_auto:good/c_scale,w_1200/v1/archive/whichcar/2018/09/05/-1/mercedes-benz-e-class-front-qtr.jpg"
+      ],
+      "brand": "Mercedes-Benz",
+      "model": "E-Class",
+      "engine": 2996,
+      "fuel": "Diesel",
+      "transmission": "Automatic",
+      "year": 2017,
+      "price": 35000,
+      "id": 10
+    },
+    {
+      "photos": [
+        "https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_675,q_auto:best,w_1200/cms/uploads/ba95nqil6rljrjgpk2bv",
+        "https://web2.wheelz.me/wp-content/uploads/2021/01/McLaren-765LT-2021.jpg",
+        "https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2021/07/2021-mclaren-765lt-spider-interior.jpg?ssl=1",
+        "https://www.charlottemclaren.com/imagetag/1804/13/l/Used-2021-McLaren-765LT.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/2022-mclaren-765lt-spider-115-1652724748.jpg?crop=0.788xw:0.591xh;0.0753xw,0.183xh&resize=1200:*"
+      ],
+      "brand": "McLaren",
+      "model": "765LT",
+      "engine": 4000,
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "year": 2021,
+      "price": 460000,
+      "id": 11
+    },
+    {
+      "photos": [
+        "https://i.autobox.al/files/04-2021/ad13420/toyota-yaris-1599251288_large.jpeg",
+        "https://i.autobox.al/files/12-2020/ad12258/toyota-yaris-2018696881_large.jpeg",
+        "data:image/jpeg;base64,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",
+        "https://motors.al/cdn/thmbs/9c/10/9c10b43397728fb0f5a884e7e2828ce3.jpg"
+      ],
+      "brand": "Toyota",
+      "model": "Yaris",
+      "engine": 1400,
+      "fuel": "Diesel",
+      "transmission": "Robotic",
+      "year": 2007,
+      "price": 3800,
+      "id": 12
+    },
+    {
+      "photos": [
+        "https://d1gymyavdvyjgt.cloudfront.net/drive/images/made/drive/images/remote/https_ssl.caranddriving.com/f2/images/used/large/Smart_794_529_70.jpg",
+        "https://motors.al/cdn/thmbs/9a/66/9a660c90cf08a61f5afa5cba2ec1cd0b.jpg",
+        "https://carnotautomart.com/uploads/car/36687_photo_3619_875.jpg",
+        "https://parkers-images.bauersecure.com/gallery-image/wp-images/2206/main-interior/1752x1168/dsc03461.jpg"
+      ],
+      "brand": "Smart ",
+      "model": "For Two",
+      "engine": 1100,
+      "fuel": "Petrol",
+      "transmission": "Robotic",
+      "year": 2004,
+      "price": 1300,
+      "id": 13
+    },
+    {
+      "photos": [
+        "https://www.auto-data.net/images/f126/Audi-A3-8P.jpg",
+        "https://a.allegroimg.com/original/115b11/efa3f1954a919faf7f601808c582",
+        "https://parkers-images.bauersecure.com/gallery-image/wp-images/1232/interior-detail/1752x1168/12_a8ee73ac-c584-4fba-8.jpg"
+      ],
+      "brand": "Audi",
+      "model": "A3",
+      "engine": 1900,
+      "fuel": "Diesel",
+      "transmission": "Manual",
+      "year": 2004,
+      "price": 3500,
+      "id": 14
+    }
+  ]
+}

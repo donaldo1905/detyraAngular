@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="cursor: pointer;" (click)="navigate()">AutoMobile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="cursor: pointer;" (click)="logout()">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-7">
+        <section class="gallery">
+      
+          <div class="gallery__item" *ngFor="let photo of item.photos; let i = index">
+            <input type="radio" id="img-{{i}}" checked name="gallery" class="gallery__selector" />
+            <img class="gallery__img" src={{photo}} alt="" />
+            
+            <label for="img-{{i}}" class="gallery__thumb"><img src={{photo}} alt="" class="small"/></label>
+            </div>
+        </section>
+      </div>
+      <div class="col-5 card">
+        <h2><b>{{item.brand}}</b></h2>
+        <hr>
+        <h4>Model: {{item.model}}</h4>
+        <h4>Cubic Capacity: {{item.engine}}</h4>
+        <h4>Fuel Type: {{item.fuel}}</h4>
+        <h4>Transmission Type: {{item.transmission}}</h4>
+        <h4>Production Year: {{item.year}}</h4>
+        <h4>Price: {{item.price | currency: 'EUR'}}</h4>
+        <button class="btn btn-outline-secondary" (click)="navigate()">Go Back</button>
+      </div>
+    </div>
+  </div>
+  

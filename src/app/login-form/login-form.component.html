@@ -1,0 +1,51 @@
+
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="width">
+        <ul class="nav nav-pills mb-3">
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#pills-home" (click)="login = true; admin = false" [class]="login ? 'active' : ''">Log In</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#pills-profile" (click)="login = false; admin = false" [class]="!login && !admin ? 'active' : ''">Sign Up</a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#pills-profile" (click)="admin = true; login = false" [class]="admin && !login ? 'active' : ''">Admin</a>
+              </li>
+          </ul>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmitLogIn()" #logIn="ngForm">
+            <div *ngIf="login === true && admin === false" class="formStyle">
+              <div class="form px-4 pt-5">
+                <p class="error" *ngIf="errorMessageLogin">{{errorMessageLogin}}</p>
+                <input type="email" class="form-control" placeholder="Email" formControlName = "usersEmail">
+                <span *ngIf="!loginForm.get('usersEmail')?.valid && loginForm.get('usersEmail')?.touched">Please enter a valid email!</span>
+                <input type="password" class="form-control" placeholder="Password" formControlName = "usersPassword">
+                <span *ngIf="!loginForm.get('usersPassword')?.valid && loginForm.get('usersPassword')?.touched">Please enter a valid password!</span><br>
+                <button type="submit" class="btn btn-outline-primary" [disabled]="!logIn.valid">Log In</button>
+              </div></div></form>
+            <form [formGroup]="signUpForm" #signUp="ngForm" (ngSubmit)="onSubmitSignUp()">
+              <div class="form px-4" *ngIf="login === false && admin === false">
+                <p class="error" *ngIf="errorMessageSignup">{{errorMessageSignup}}</p>
+                <input type="text" class="form-control" placeholder="First Name" formControlName="fname">
+                <span *ngIf="!signUpForm.get('fname')?.valid && signUpForm.get('fname')?.touched">Please enter a valid First Name!</span>
+                <input type="text" class="form-control" placeholder="Last Name" formControlName="lname">
+                <span *ngIf="!signUpForm.get('lname')?.valid && signUpForm.get('lname')?.touched">Please enter a valid Last Name!</span>
+                <input type="email" class="form-control" placeholder="Email" formControlName="newEmail">
+                <span *ngIf="!signUpForm.get('newEmail')?.valid && signUpForm.get('newEmail')?.touched">Please enter a valid email!</span>
+                <input type="password" class="form-control" placeholder="Password" formControlName="newPassword">
+                <span *ngIf="!signUpForm.get('newPassword')?.valid && signUpForm.get('newPassword')?.touched">Please enter a valid password!</span><br>
+                <button type="submit" class="btn btn-outline-primary" [disabled]="!signUp.valid">Sign Up</button>  
+            </div>
+          </form>
+          <form [formGroup]="adminForm" #adminLogIn="ngForm" (ngSubmit)="onSubmitAdmin()">
+            <div class="form px-4 pt-5" *ngIf="admin === true">
+              <p class="error" *ngIf="errorMessageAdmin">{{errorMessageAdmin}}</p>
+                <input type="email" class="form-control" placeholder="Admin Email" formControlName="adminEmail">
+                <span *ngIf="!adminForm.get('adminEmail')?.valid && adminForm.get('adminEmail')?.touched">Please enter a valid email!</span>
+                <input type="password" class="form-control" placeholder="Admin Password" formControlName="adminPassword">
+                <span *ngIf="!adminForm.get('adminPassword')?.valid && adminForm.get('adminPassword')?.touched">Please enter a valid password!</span><br>
+                <button type="submit" class="btn btn-outline-primary" [disabled]="!adminLogIn.valid">Log In</button>
+              </div>
+            </form>
+           </div>
+    </div>
+  
